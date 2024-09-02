@@ -1,0 +1,73 @@
+/* slides */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* toggle theme button */
+.toggle-button {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 32px;
+  border-radius: 34px;
+  transition: background-color 1s ease-in;
+  flex-shrink: 0;
+}
+
+.toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: transform 1s ease-in;
+}
+
+.toggle-slider.on {
+  transform: translateX(18px);
+}
+
+.toggle-slider.off {
+  transform: translateX(0);
+}
+
+/* close button rotation */
+.rotate {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  transition: transform 1s;
+}
+.rotate:hover {
+  transform: rotate(90deg);
+}
