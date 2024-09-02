@@ -8,6 +8,7 @@ export const postRequest = async ({
   token,
 }) => {
   try {
+    console.log("hello");
     const options = {
       method: "POST",
       headers: {
