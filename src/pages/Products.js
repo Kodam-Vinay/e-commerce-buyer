@@ -91,22 +91,22 @@ const Products = () => {
           marginBottom: 6,
         }}
       >
-        {/* {productsList?.length > 0
+        {productsList?.length > 0
           ? productsList?.map((eachProduct) => (
               <EachProduct
                 details={eachProduct}
                 key={eachProduct?.product_id}
               />
             ))
-          : setApiStatus(API_STATUS_LIST.nodata)} */}
-        {productsList?.length > 0 ? (
+          : setApiStatus(API_STATUS_LIST.nodata)}
+        {/* {productsList?.length > 0 ? (
           <EachProduct
             details={productsList[0]}
             // key={eachProduct?.product_id}
           />
         ) : (
           setApiStatus(API_STATUS_LIST.nodata)
-        )}
+        )} */}
         <FiltersButtons />
       </Grid>
     );
